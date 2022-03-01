@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="184dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/appNameTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/old_books_436498_1280" />
+
+    <TextView
+        android:id="@+id/appNameTxt"
+        android:layout_width="113dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:text="My Library"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/seeAllBooksBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/seeAllBooksBtn"
+        android:layout_width="242dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:text="See all books"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/curReadBooksBtn"
+        app:layout_constraintEnd_toEndOf="@+id/curReadBooksBtn"
+        app:layout_constraintStart_toStartOf="@+id/curReadBooksBtn" />
+
+    <Button
+        android:id="@+id/curReadBooksBtn"
+        android:layout_width="242dp"
+        android:layout_height="59dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:text="Currently reading books"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/alreadyReadBooksBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/alreadyReadBooksBtn"
+        android:layout_width="242dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:text="Already read books"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/wishListBtn"
+        app:layout_constraintEnd_toEndOf="@+id/curReadBooksBtn"
+        app:layout_constraintStart_toStartOf="@+id/curReadBooksBtn" />
+
+    <Button
+        android:id="@+id/wishListBtn"
+        android:layout_width="242dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:text="Wishlist"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/favoritesBtn"
+        app:layout_constraintEnd_toEndOf="@+id/alreadyReadBooksBtn"
+        app:layout_constraintStart_toStartOf="@+id/alreadyReadBooksBtn" />
+
+    <Button
+        android:id="@+id/favoritesBtn"
+        android:layout_width="242dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:text="Favorites List"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/aboutBtn"
+        app:layout_constraintEnd_toEndOf="@+id/wishListBtn"
+        app:layout_constraintStart_toStartOf="@+id/wishListBtn" />
+
+    <Button
+        android:id="@+id/aboutBtn"
+        android:layout_width="242dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:text="About"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/favoritesBtn"
+        app:layout_constraintStart_toStartOf="@+id/favoritesBtn" />
+
+    <TextView
+        android:id="@+id/tarademarkTxt"
+        android:layout_width="255dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Developed by Youmna Elmezayen"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
